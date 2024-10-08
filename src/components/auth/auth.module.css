@@ -1,0 +1,35 @@
+.auth-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.auth-buttons__button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0 13px 0 10px;
+  border-radius: 40px;
+  min-height: 34px;
+  box-sizing: border-box;
+  line-height: 34px;
+  transition: .2s all;
+}
+
+.auth-buttons__button_login,
+.auth-buttons__button_logout {
+  color: var(--primaryWhite);
+  background-color: var(--darkGrey);
+}
+
+.auth-buttons__button_login,
+.auth-buttons__button_logout:hover {
+  background-color: var(--primaryButtonHoverColor);
+}
+
+.auth-buttons__button_sign-up {
+  background-color: var(--secondaryButtonColor);
+}
+
+.auth-buttons__button_sign-up:hover {
+  background-color: var(--secondaryButtonHoverColor);
+}

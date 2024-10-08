@@ -1,0 +1,156 @@
+.about {
+  padding: 60px 0;
+}
+
+.title {
+  color: var(--textColor);
+  font-weight: 700;
+  font-size: 2.25rem;
+}
+
+@media (max-width: 600px) {
+
+  .title {
+    font-size: 1.68rem;
+  }
+}
+
+.about__title {
+  margin-bottom: 60px;
+}
+
+.about__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 80px;
+  margin-bottom: 20px;
+}
+
+.about__info {
+  display: flex;
+  flex-direction: column;
+  max-width: 45%;
+}
+
+.about__info_link {
+  color: var(--textColor);
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.about__info_text,
+.about__education,
+.about__skills {
+  font-weight: 400;
+  font-size: 1.37rem;
+  line-height: 32px;
+  margin-bottom: 20px;
+}
+
+.about__info_text:last-child {
+  margin-bottom: 0;
+}
+
+.about__image {
+  max-width: 47%;
+  width: 42.6%;
+  height: 489px;
+  margin-top: 96px;
+}
+
+.about__image_photo {
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.about__skills_education,
+.about__skills,
+.about__education {
+  color: var(--textColor);
+}
+
+.about__skills ul,
+.about__education ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  padding: 0;
+}
+
+.about__skills ul li,
+.about__education ul li {
+  color: var(--textColor);
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+
+@media (max-width: 1120px) {
+
+  .about__content {
+    gap: 40px;
+  }
+
+  .about__info {
+    max-width: 52%;
+    margin-bottom: 25px;
+  }
+
+  .about__image {
+    max-width: 74%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+
+  .about {
+    padding: 30px 0 40px;
+  }
+
+  .about__title {
+    margin-bottom: 30px;
+  }
+
+  .about__content {
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+
+  .about__info {
+    max-width: 100%;
+  }
+
+  .about__image {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .about__image {
+    max-width: 92.6%;
+    width: 100%;
+    height: 366px;
+    border-radius: 30px;
+  }
+
+  .about__info_text {
+    font-size: 1rem;
+    line-height: 19.5px;
+  }
+}
+
+@media (max-width: 400px) {
+
+  .about__image {
+    max-width: 100%;
+    width: 100%;
+    height: 294px;
+  }
+}
